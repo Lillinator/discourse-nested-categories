@@ -3,4 +3,4 @@ nested_categories:
   list_type: category
   default: ""
   description:
-    en: "categories or subcategories to nest."
+    en: "Categories or subcategories to nest."
