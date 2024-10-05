@@ -1,0 +1,8 @@
+{
+  "name": "Nested Subcategories",
+  "component": true,
+  "about_url": "https://github.com/Lillinator/discourse-nested-subcategories/blob/main/README.md",
+  "license_url": "https://github.com/Lillinator/discourse-nested-subcategories/blob/main/LICENSE",
+  "authors": "@Lilly",
+  "theme_version": "0.0.1"
+}
