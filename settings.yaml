@@ -1,0 +1,6 @@
+setting-1:
+  type: list
+  list_type: category
+  description:
+    en: "subcategories to nest."
+  
