@@ -1,4 +1,3 @@
-
 $nested_subcats: str-to-list("#{$nested_subcategories}", "|");
 
 @each $subcat-id in $nested_subcats {
