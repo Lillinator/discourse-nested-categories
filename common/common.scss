@@ -1,8 +1,2 @@
-li.sidebar-section-link-wrapper {
-  &[data-category-id="10"], /*subcategory ID*/
-  &[data-category-id="11"], /*subcategory ID*/
-  &[data-category-id="12"], /*subcategory ID*/
-  &[data-category-id="13"]  /*subcategory ID*/ {
-    margin-left: 1em;
-  }
-}
+@import "str-to-list";
+@import "subcategory_nester";
