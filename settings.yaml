@@ -1,6 +1,6 @@
-nested_subcategories:
+nested_categories:
   type: list
   list_type: category
   default: ""
   description:
-    en: "subcategories to nest."
+    en: "categories or subcategories to nest."
