@@ -1,3 +1,9 @@
+
+
+$staff_sections: str-to-list("#{$setting}", "|");
+
+@each $thing in $things {
+
 li.sidebar-section-link-wrapper {
   &[data-category-id="10"], /*subcategory ID*/
   &[data-category-id="11"], /*subcategory ID*/
