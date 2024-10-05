@@ -1,12 +1,9 @@
 
-$staff_sections: str-to-list("#{$setting}", "|");
+$nested_subcats: str-to-list("#{$nested_subcategories}", "|");
 
-@each $thing in $things {
+@each $subcat-id in $nested_subcats {
   li.sidebar-section-link-wrapper {
-    &[data-category-id="10"], /*subcategory ID*/
-    &[data-category-id="11"], /*subcategory ID*/
-    &[data-category-id="12"], /*subcategory ID*/
-    &[data-category-id="13"]  /*subcategory ID*/ {
+    &[data-category-id="#{$subcat-id}"] {
     margin-left: 1em;
     }
   }
