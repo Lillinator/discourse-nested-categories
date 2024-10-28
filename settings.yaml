@@ -5,12 +5,6 @@ indent_select_categories:
   description:
     en: "Categories or subcategories to nest."
 
-intent_all_categories_except_the following:
-  type: boolean
-  default: false
-  description:
-    en: "Enable this if you want to indent all categories except those listed below."
-
 categories_not_indented:
   type: list
   list_type: category
