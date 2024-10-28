@@ -1,9 +1,0 @@
-$nested_subcats: str-to-list("#{$nested_categories}", "|");
-
-@each $subcat-id in $nested_subcats {
-  li.sidebar-section-link-wrapper {
-    &[data-category-id="#{$subcat-id}"] {
-    margin-left: 1em;
-    }
-  }
-}
