@@ -1,20 +1,19 @@
-indent_select_categories:
+indent_only_select_categories:
   type: list
   list_type: category
   default: ""
   description:
-    en: "Categories or subcategories to nest."
+    en: "List of selected categories or subcategories to indent."
 
 indent_all_categories_except_the_following:
   type: bool
   default: false
   description:
-    en: "Enable this if you want to indent all categories except those in the list setting below."
+    en: "Enable this setting if you want to indent all categories except those in the list setting below. Above list setting must be empty."
     
 categories_not_to_indent:
   type: list
   list_type: category
   default: ""
   description:
-    en: "Categories not indented if using the setting above."
-  
+    en: "List of categories NOT to be indented if using the setting above."
