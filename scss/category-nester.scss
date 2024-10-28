@@ -14,7 +14,7 @@
 @if $indent_all_categories_except_the_following == "true" {
 
   li.sidebar-selection-link-wrapper {
-    margin-left: 1em;
+    margin-left: 2em;
   }
   
   $not_indented_cats: str-to-list("#{$categories_not_to_indent}", "|");
