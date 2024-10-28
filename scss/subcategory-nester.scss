@@ -1,25 +1,25 @@
-@if $indented_categories !="" {
+@if $indent_all_categories_except_the_following == "false" {
 
-  $indented_subcats: str-to-list("#{$indented_categories}", "|");
+  $indented_cats: str-to-list("#{$indent_select_categories}", "|");
 
-  @each $subcat-id in $indented_subcats {
+  @each $subcat-id in $indented_cats {
     li.sidebar-section-link-wrapper {
       &[data-category-id="#{$subcat-id}"] {
       margin-left: 1em;
       }
     }
   }
-)
+}
 
-@elseif $categories_not_indented !="" {
+@if $indent_all_categories_except_the_following == "true" {
 
-  $not_indented_subcats: str-to-list("#{$categories_not_indented}", "|");
+  $not_indented_cats: str-to-list("#{$categories_not_to_indent}", "|");
 
-  @each $cat-id in $not_indented_subcats {
+  @each $cat-id in $not_indented_cats {
     li.sidebar-section-link-wrapper {
       &[data-category-id="#{$cat-id}"] {
       margin-left: 1em;
       }
     }
   }
-)
+}
