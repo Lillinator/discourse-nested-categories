@@ -1,9 +1,25 @@
-$nested_subcats: str-to-list("#{$nested_categories}", "|");
+@if $indented_categories !="" {
 
-@each $subcat-id in $nested_subcats {
-  li.sidebar-section-link-wrapper {
-    &[data-category-id="#{$subcat-id}"] {
-    margin-left: 1em;
+  $indented_subcats: str-to-list("#{$indented_categories}", "|");
+
+  @each $subcat-id in $indented_subcats {
+    li.sidebar-section-link-wrapper {
+      &[data-category-id="#{$subcat-id}"] {
+      margin-left: 1em;
+      }
     }
   }
-}
+)
+
+@elseif $categories_not_indented !="" {
+
+  $not_indented_subcats: str-to-list("#{$categories_not_indented}", "|");
+
+  @each $cat-id in $not_indented_subcats {
+    li.sidebar-section-link-wrapper {
+      &[data-category-id="#{$cat-id}"] {
+      margin-left: 1em;
+      }
+    }
+  }
+)
