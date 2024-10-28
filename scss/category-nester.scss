@@ -1,6 +1,6 @@
 @if $indent_all_categories_except_the_following == "false" {
 
-  $indented_cats: str-to-list("#{$indent_select_categories}", "|");
+  $indented_cats: str-to-list("#{$indent_only_select_categories}", "|");
 
   @each $subcat-id in $indented_cats {
     li.sidebar-section-link-wrapper {
