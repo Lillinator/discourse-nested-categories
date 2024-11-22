@@ -9,7 +9,11 @@
       }
     }
   }
+  .sidebar-section-link-wrapper[data-list-item-name="all-categories"} {
+      margin-left: 0em;
+  }
 }
+
 
 @if $indent_all_categories_except_the_following == "true" {
 
