@@ -1,0 +1,9 @@
+{
+  "name": "discourse-nested-categories",
+  "repository": "https://github.com/Lillinator/discourse-nested-categories",
+  "author": "Lilly",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-discourse": "latest"
+  }
+}
